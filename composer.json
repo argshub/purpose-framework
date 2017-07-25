@@ -9,5 +9,10 @@
       "name": "arsghub",
       "email": "argshub@outlook.com"
     }
-  ]
+  ],
+  "require": {
+    "psr-4": {
+      "Turbo\\": "src/Turbo/"
+    }
+  }
 }
