@@ -10,7 +10,7 @@
       "email": "argshub@outlook.com"
     }
   ],
-  "require": {
+  "autoload": {
     "psr-4": {
       "Turbo\\": "src/Turbo/"
     }
