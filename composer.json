@@ -3,6 +3,7 @@
   "description": "A Purpose to Web",
   "minimum-stability": "dev",
   "license": "MIT",
+  "version": "1.0.0",
   "authors": [
     {
       "name": "arsghub",
