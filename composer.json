@@ -1,18 +1,17 @@
 {
-  "name": "purpose/framework",
-  "description": "A Purpose to Web",
-  "minimum-stability": "dev",
-  "license": "MIT",
-  "version": "1.0.0",
-  "authors": [
-    {
-      "name": "arsghub",
-      "email": "argshub@outlook.com"
+    "name": "vendor/purpose-framework",
+    "description": "Description of project purposes.",
+    "authors": [
+        {
+            "name": "argshub",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Turbo\\": "src/Turbo/",
+            "Purpose\\": "src/Purpose/"
+        }
     }
-  ],
-  "autoload": {
-    "psr-4": {
-      "Turbo\\": "src/Turbo/"
-    }
-  }
 }
