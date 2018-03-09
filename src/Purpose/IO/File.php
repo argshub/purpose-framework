@@ -13,4 +13,21 @@ namespace Purpose\IO;
  */
 class File {
     //put your code here
+    private $fileName;
+    public function __construct(string $fileName) {
+        $this->fileName = $fileName;
+    }
+    
+    public function isExist(): bool {
+        return file_exists($this->fileName);
+    }
+    
+    public function getFileName(): string {
+        return $this->fileName;
+    }
+    
+    public function createNewFile() {
+        $file = fopen($this->fileName, "w");
+        fclose($file);
+    }
 }

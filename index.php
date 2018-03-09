@@ -8,11 +8,15 @@
 
 require_once 'vendor/autoload.php';
 
-use Purpose\Helpers\StringHelper;
+use Purpose\IO\File;
+use Purpose\IO\FileReader;
+use Purpose\IO\FileWritter;
 
-$data = "HHello Wolrddd";
+$file = new File("index");
 
-StringHelper::rtrim($data, 'd');
-StringHelper::ltrim($data, 'H');
+$fileWritter = new FileWritter($file);
 
-print $data;
+if($file->isExist()) {
+    $reader = new FileReader($file);
+    foreach ($reader->readByLine() as $line) print $line;
+} else $file->createNewFile ();
